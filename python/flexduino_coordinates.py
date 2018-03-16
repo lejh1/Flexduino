@@ -38,6 +38,9 @@ def processCoords(x, y):
     x1 = int(x//(sW/9))
     y1 = int(y//(sH/5))
 
+    if (x1 > 8): x1 = 8
+    if (y1 > 4): y1 = 4
+        
     return dictionary[(x1, y1)]
 
 """
